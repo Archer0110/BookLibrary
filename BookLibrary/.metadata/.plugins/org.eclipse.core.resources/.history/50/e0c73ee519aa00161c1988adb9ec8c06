@@ -1,0 +1,19 @@
+package com.llx.demo1;
+
+import java.io.File;
+
+public class Demo1 {
+	public static void main(String[] args) {
+/*		File的路径
+		1、绝对路径*/
+		File myFile = new File("c:\\myflies\\test.txt");//操作系统路径
+		File muFile1 = new File("c:/myflies/test.txt");  //常用于网页之类的路径
+		/*判断文件或目录是否存在*/
+		if(myFile.exists()){
+			System.out.println("存在");
+		}else{
+			System.out.println("不存在");
+		}
+	}
+
+}

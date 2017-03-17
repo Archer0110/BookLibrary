@@ -1,0 +1,23 @@
+package com.llx.demo1;
+
+import java.io.File;
+import java.io.IOException;
+
+public class Text1 {
+	public static void main(String[] args) {
+		File file = new File("work2");
+		if(file.isFile() && !file.exists()){
+			try {
+				if(file.createNewFile()){
+					System.out.println("chenggong");
+				}
+				else{
+					System.out.println("shibai");
+				}
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+}
